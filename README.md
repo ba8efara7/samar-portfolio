@@ -1,0 +1,120 @@
+[index.html](https://github.com/user-attachments/files/33037667/index.html)
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102f43">
+<title>ملف الإنجاز الإلكتروني | سمر الغامدي</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+:root{--ink:#17384b;--blue:#397895;--mist:#eef5f7;--cream:#f4ecdc;--gold:#b99555;--white:#fff;--muted:#6d7c84;--line:#dce7eb;--shadow:0 22px 60px rgba(20,55,72,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Cairo,Arial,sans-serif;color:var(--ink);background:#f7fafb;line-height:1.9}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#b7cdd6 1px,transparent 1px);background-size:28px 28px}
+a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{min-height:88vh;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#f8fbfc 0%,#edf5f7 58%,#f5efe4 100%)}
+.orb{position:absolute;border-radius:50%;filter:blur(1px);opacity:.65}.o1{width:480px;height:480px;background:#d9eaf0;left:-170px;top:-170px}.o2{width:380px;height:380px;background:#eadfc9;right:-120px;bottom:-150px}.o3{width:130px;height:130px;background:#cbdfe7;right:20%;top:16%}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center;position:relative;z-index:1}
+.kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 15px;border:1px solid #d6e3e8;background:#ffffffb8;border-radius:30px;color:var(--blue);font-weight:700;font-size:14px}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.1;margin:22px 0 12px;font-weight:800;letter-spacing:-1px}
+.hero p{font-size:19px;color:var(--muted);max-width:650px}.role{font-weight:700;color:var(--blue)!important}
+.profile{background:#ffffffc9;border:1px solid #dce7eb;border-radius:38px;padding:35px;box-shadow:var(--shadow);text-align:center;backdrop-filter:blur(12px)}
+.monogram{width:145px;height:145px;margin:auto auto 20px;border-radius:42px;display:grid;place-items:center;background:linear-gradient(145deg,var(--ink),var(--blue));color:#fff;font-size:58px;font-weight:800;box-shadow:0 20px 40px #17384b30}
+.profile h2{margin:0;color:var(--ink)}.profile small{color:var(--muted)}
+nav{position:sticky;top:0;z-index:50;background:#ffffffde;backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
+.nav{display:flex;gap:6px;overflow:auto;padding:9px 0}.nav a{white-space:nowrap;padding:9px 12px;border-radius:12px;color:var(--muted);font-size:13px}.nav a:hover{background:var(--mist);color:var(--ink)}
+section{padding:90px 0}.head{text-align:center;margin-bottom:42px}.num{font-size:13px;color:var(--gold);font-weight:800;letter-spacing:1px}.head h2{font-size:35px;margin:3px 0;color:var(--ink)}.head p{margin:0;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:var(--shadow)}
+.cv .card{min-height:165px}.ico{font-size:31px;margin-bottom:10px}.card h3{margin:0 0 5px}.card p{margin:0;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}.quote{position:relative;overflow:hidden}.quote:after{content:"“";position:absolute;left:20px;bottom:-50px;font-size:160px;color:#eef3f4;font-weight:800;line-height:1}
+.goals{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.goal{padding:24px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}.goal b{color:var(--blue);display:block;margin-bottom:5px}
+.qr-area{background:linear-gradient(180deg,#edf5f7,#f7fafb)}.qr-layout{display:grid;grid-template-columns:1fr 340px;gap:45px;align-items:center}.qr-copy h3{font-size:30px;margin:0 0 8px}.qr-copy p{color:var(--muted)}.qr-card{background:#fff;border:1px solid var(--line);border-radius:30px;padding:25px;text-align:center;box-shadow:var(--shadow)}.qr-card img{width:255px;height:255px;max-width:100%;border-radius:14px}.qr-label{color:var(--muted);font-size:13px;margin-top:8px}
+.btn{display:inline-flex;background:var(--ink);color:#fff;padding:11px 20px;border-radius:14px;font-weight:700;margin-top:8px}.btn:hover{background:var(--blue)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact a,.contact .card{display:flex;gap:15px;align-items:center}.contact .ico{margin:0}
+footer{background:var(--ink);color:#dbe7eb;text-align:center;padding:30px 15px;font-size:13px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:820px){.hero,.two,.qr-layout{grid-template-columns:1fr}.profile{order:-1}.grid3,.goals{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){section{padding:62px 0}.grid3,.goals,.contact{grid-template-columns:1fr}.hero{gap:35px}h1{font-size:46px}.hero p{font-size:17px}.card{padding:23px}}
+</style>
+</head>
+<body>
+<header id="home">
+ <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+ <div class="wrap hero">
+  <div>
+   <span class="kicker">✦ ملف الإنجاز الإلكتروني</span>
+   <h1>سمر الغامدي</h1>
+   <p class="role">معلمة تقنية رقمية • الثانوية الحادية عشرة – جدة</p>
+   <p>مساحة مهنية تفاعلية تجمع الهوية التعليمية، الرؤية، الممارسات المهنية، وشواهد العمل في تجربة رقمية هادئة وأنيقة.</p>
+  </div>
+  <div class="profile">
+   <div class="monogram">س</div>
+   <h2>سمر الغامدي</h2>
+   <small>بكالوريوس نظم المعلومات · 9 سنوات خبرة</small>
+  </div>
+ </div>
+</header>
+
+<nav><div class="wrap nav">
+<a href="#home">الرئيسية</a><a href="#cv">السيرة الذاتية</a><a href="#vision">الرؤية والرسالة</a><a href="#goals">الأهداف</a><a href="#ethics">الميثاق المهني</a><a href="#evidence">شواهد الأداء</a><a href="#students">ملف الطالبات</a><a href="#contact">التواصل</a>
+</div></nav>
+
+<section id="cv"><div class="wrap reveal">
+<div class="head"><div class="num">01</div><h2>السيرة الذاتية</h2><p>نبذة مهنية مختصرة</p></div>
+<div class="grid3 cv">
+<div class="card"><div class="ico">🎓</div><h3>المؤهل العلمي</h3><p>بكالوريوس نظم المعلومات</p></div>
+<div class="card"><div class="ico">💼</div><h3>الخبرة المهنية</h3><p>9 سنوات من الخبرة في المجال التعليمي والتقني</p></div>
+<div class="card"><div class="ico">🏫</div><h3>جهة العمل</h3><p>الثانوية الحادية عشرة – جدة</p></div>
+</div></div></section>
+
+<section id="vision"><div class="wrap reveal">
+<div class="head"><div class="num">02</div><h2>الرؤية والرسالة</h2></div>
+<div class="two">
+<div class="card quote"><h3>الرؤية</h3><p>بناء بيئة تعليمية رقمية محفزة، توظّف التقنية بوعي وإبداع، وتسهم في إعداد طالبات قادرات على التعلم المستمر والمشاركة الفاعلة في المستقبل.</p></div>
+<div class="card quote"><h3>الرسالة</h3><p>تقديم تعليم تقني حديث يربط المعرفة بالتطبيق، وينمّي مهارات التفكير والإبداع وحل المشكلات، مع توظيف الأدوات الرقمية بما يدعم تعلمًا آمنًا وفعّالًا.</p></div>
+</div></div></section>
+
+<section id="goals"><div class="wrap reveal">
+<div class="head"><div class="num">03</div><h2>الأهداف التعليمية</h2><p>محاور تركز على المتعلمة والتطبيق العملي</p></div>
+<div class="goals">
+<div class="goal"><b>تنمية المهارات الرقمية</b>تمكين الطالبات من توظيف الأدوات والتقنيات الرقمية بكفاءة.</div>
+<div class="goal"><b>التفكير والإبداع</b>تنمية التفكير الناقد والإبداعي والقدرة على حل المشكلات.</div>
+<div class="goal"><b>التعلم التطبيقي</b>ربط المفاهيم التقنية بمواقف ومشروعات واقعية.</div>
+<div class="goal"><b>المواطنة الرقمية</b>تعزيز الاستخدام الآمن والمسؤول والأخلاقي للتقنية.</div>
+<div class="goal"><b>التعلم المستمر</b>تشجيع البحث والتجريب والتطوير الذاتي في المجال الرقمي.</div>
+<div class="goal"><b>التعاون والمشاركة</b>تفعيل العمل الجماعي ومشاركة المعرفة والخبرات.</div>
+</div></div></section>
+
+<section id="ethics"><div class="wrap reveal">
+<div class="head"><div class="num">04</div><h2>الميثاق المهني</h2></div>
+<div class="card"><p>ألتزم بأداء رسالتي التعليمية بمهنية ومسؤولية، واحترام المتعلمات والزميلات، والمحافظة على سرية المعلومات، وتوظيف التقنية بصورة آمنة وأخلاقية، وتطوير ممارساتي المهنية باستمرار، بما يحقق جودة التعليم ويدعم بيئة مدرسية إيجابية.</p></div>
+</div></section>
+
+<section id="evidence" class="qr-area"><div class="wrap reveal">
+<div class="head"><div class="num">05</div><h2>شواهد الأداء الوظيفي</h2><p>QR واحد للوصول إلى كامل الشواهد</p></div>
+<div class="qr-layout">
+<div class="qr-copy"><h3>شواهد الأداء الوظيفي</h3><p>امسحي رمز QR للوصول إلى مجلد الشواهد المرفوع على Google Drive، أو استخدمي الزر للفتح المباشر.</p><a class="btn" href="https://drive.google.com/drive/folders/1il3y6_bAXJtFxrMsbDU8Ec8NSMmma78n" target="_blank" rel="noopener">فتح الشواهد مباشرة ↗</a></div>
+<div class="qr-card"><img src="https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1il3y6_bAXJtFxrMsbDU8Ec8NSMmma78n" alt="رمز QR لشواهد الأداء"><div class="qr-label">QR واحد · شواهد الأداء الوظيفي</div></div>
+</div></div></section>
+
+<section id="students"><div class="wrap reveal">
+<div class="head"><div class="num">06</div><h2>ملف إنجاز الطالبات</h2><p>QR واحد للوصول إلى ملف الإنجاز التفاعلي</p></div>
+<div class="qr-layout">
+<div class="qr-copy"><h3>ملف إنجاز الطالبات</h3><p>امسحي رمز QR لفتح ملف الإنجاز التفاعلي على Padlet، أو استخدمي الزر للانتقال مباشرة.</p><a class="btn" href="https://padlet.com/ba8yfar7/1-1-s023iibn8b98uy4g3fst" target="_blank" rel="noopener">فتح ملف الطالبات مباشرة ↗</a></div>
+<div class="qr-card"><img src="https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=https%3A%2F%2Fpadlet.com%2Fba8yfar7%2F1-1-s023iibn8b98uy4g3fst" alt="رمز QR لملف إنجاز الطالبات"><div class="qr-label">QR واحد · ملف إنجاز الطالبات</div></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap reveal">
+<div class="head"><div class="num">07</div><h2>التواصل</h2><p>بيانات التواصل المهنية</p></div>
+<div class="contact">
+<a class="card" href="mailto:sam0o0ree.m@gmail.com"><div class="ico">✉️</div><div><b>البريد الإلكتروني</b><br><span style="color:#6d7c84">sam0o0ree.m@gmail.com</span></div></a>
+<div class="card"><div class="ico">🏫</div><div><b>جهة العمل</b><br><span style="color:#6d7c84">الثانوية الحادية عشرة – جدة</span></div></div>
+</div></div></section>
+
+<footer>© <span id="y"></span> سمر الغامدي · ملف الإنجاز الإلكتروني</footer>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+</script>
+</body></html>
